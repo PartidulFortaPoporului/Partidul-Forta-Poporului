@@ -1,0 +1,110 @@
+/* Se aplică întregului site */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* HEADER */
+header {
+    background-color: rgba(0, 43, 127, 0.9); /* Albastru tricolor */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #FFD700; /* Galben tricolor */
+}
+
+header img {
+    height: 80px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFD700; /* Galben când treci cu mouse-ul */
+}
+
+/* HERO SECTION */
+.hero {
+    background-color: rgba(0, 0, 0, 0.6); /* fundal negru semi-transparent */
+    padding: 100px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.hero h1, .hero p {
+    margin: 0;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+/* CONȚINUT CENTRAL */
+main {
+    flex: 1;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 30px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.content h2 {
+    text-align: center;
+}
+
+/* FORMULARE */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+button {
+    background-color: white;
+    border: 2px solid #C8102E; /* Roșu tricolor */
+    color: #002B7F; /* Albastru tricolor */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #C8102E;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background-color: rgba(200, 16, 46, 0.9); /* Roșu tricolor */
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
