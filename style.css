@@ -1,4 +1,4 @@
-/* Se aplică întregului site */
+/* Stil general */
 html, body {
     height: 100%;
     margin: 0;
@@ -16,18 +16,22 @@ body {
     background-repeat: no-repeat;
 }
 
-/* HEADER */
+/* Header */
 header {
-    background-color: rgba(0, 43, 127, 0.9); /* Albastru tricolor */
+    background-color: rgba(0, 43, 127, 0.9);
     padding: 20px;
     text-align: center;
-    border-bottom: 5px solid #FFD700; /* Galben tricolor */
+    border-bottom: 5px solid #FFD700;
 }
 
 header img {
     height: 80px;
     display: block;
     margin: 0 auto 10px auto;
+}
+
+nav {
+    margin-top: 10px;
 }
 
 nav a {
@@ -39,12 +43,12 @@ nav a {
 }
 
 nav a:hover {
-    color: #FFD700; /* Galben când treci cu mouse-ul */
+    color: #FFD700;
 }
 
-/* HERO SECTION */
+/* Hero Section */
 .hero {
-    background-color: rgba(0, 0, 0, 0.6); /* fundal negru semi-transparent */
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 100px 20px;
     text-align: center;
     border-radius: 10px;
@@ -56,54 +60,41 @@ nav a:hover {
     text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
 }
 
-/* CONȚINUT CENTRAL */
+/* Social Media Iconițe */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 40px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover .fa-facebook-square {
+    color: #1877f2;
+    transform: scale(1.2);
+}
+
+.social-icons a:hover .fa-tiktok {
+    color: #000000;
+    transform: scale(1.2);
+}
+
+/* Main */
 main {
     flex: 1;
 }
 
-.content {
-    background-color: rgba(0, 0, 0, 0.6);
-    margin: 30px auto;
-    padding: 20px;
-    width: 90%;
-    max-width: 1200px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-}
-
-.content h2 {
-    text-align: center;
-}
-
-/* FORMULARE */
-input[type="text"], input[type="email"], textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    color: black;
-}
-
-button {
-    background-color: white;
-    border: 2px solid #C8102E; /* Roșu tricolor */
-    color: #002B7F; /* Albastru tricolor */
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-weight: bold;
-}
-
-button:hover {
-    background-color: #C8102E;
-    color: white;
-}
-
-/* FOOTER */
+/* Footer */
 footer {
-    background-color: rgba(200, 16, 46, 0.9); /* Roșu tricolor */
+    background-color: rgba(200, 16, 46, 0.9);
     text-align: center;
     padding: 15px 0;
     margin-top: auto;
